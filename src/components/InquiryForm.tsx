@@ -212,7 +212,7 @@ export default function InquiryForm({ selectedSize }: InquiryFormProps) {
   };
 
   // WhatsApp chat configuration
-  const whatsappNumber = "919773235862";
+  const whatsappNumber = "917016846122";
   const whatsappMessage = encodeURIComponent("Hi, I'm interested in AREDH Herbal Cleanser. Please share ordering details.");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
@@ -450,10 +450,10 @@ export default function InquiryForm({ selectedSize }: InquiryFormProps) {
                   <div className="space-y-0.5">
                     <span className="text-[10px] text-stone-500 font-mono tracking-wider block">PHONE CALLS & INQUIRIES</span>
                     <a
-                      href="tel:+919773235862"
+                      href="tel:+917016846122"
                       className="text-stone-200 hover:text-gold-300 font-sans text-sm font-semibold block transition-colors"
                     >
-                      +91 977-323-5862
+                      +91 70168 46122
                     </a>
                   </div>
                 </div>
@@ -466,10 +466,10 @@ export default function InquiryForm({ selectedSize }: InquiryFormProps) {
                   <div className="space-y-0.5">
                     <span className="text-[10px] text-stone-500 font-mono tracking-wider block">EMAIL SUPPORT</span>
                     <a
-                      href="mailto:dishantpatel769@gmail.com"
+                      href="mailto:contact@aredh.in"
                       className="text-stone-200 hover:text-gold-300 font-mono text-xs block transition-colors"
                     >
-                      dishantpatel769@gmail.com
+                      contact@aredh.in
                     </a>
                   </div>
                 </div>

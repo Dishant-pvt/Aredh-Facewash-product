@@ -2,7 +2,7 @@ import React from "react";
 import { MessageSquare, Sparkles } from "lucide-react";
 
 export default function WhatsAppButton() {
-  const whatsappNumber = "919773235862";
+  const whatsappNumber = "917016846122";
   const whatsappMessage = encodeURIComponent("Hi, I'm interested in AREDH Herbal Cleanser. Please share ordering details.");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
