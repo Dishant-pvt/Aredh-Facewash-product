@@ -1,5 +1,5 @@
 import React from "react";
-import { Flower2, Phone, MapPin, Mail, Sparkles, ArrowUp } from "lucide-react";
+import { Flower2, Phone, MapPin, Mail, Sparkles, ArrowUp, Instagram } from "lucide-react";
 import AredhLogo from "./AredhLogo";
 
 export default function Footer() {
@@ -102,6 +102,18 @@ export default function Footer() {
                 <Mail className="w-4 h-4 text-gold-400 shrink-0 mt-1" />
                 <a href="mailto:contact@aredh.in" className="text-stone-400 hover:text-gold-300 transition-colors font-mono text-xs">
                   contact@aredh.in
+                </a>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <Instagram className="w-4 h-4 text-pink-400 shrink-0 mt-1" />
+                <a 
+                  href="https://www.instagram.com/aredh_skincare" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-stone-400 hover:text-pink-300 transition-colors font-mono text-xs flex items-center gap-1"
+                >
+                  @aredh_skincare
                 </a>
               </div>
             </div>

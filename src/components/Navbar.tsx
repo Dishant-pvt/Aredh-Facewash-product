@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X, Flower2, Sparkles } from "lucide-react";
+import { Menu, X, Flower2, Sparkles, Instagram } from "lucide-react";
 import AredhLogo from "./AredhLogo";
 
 export default function Navbar() {
@@ -76,8 +76,18 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Call to Action Button */}
-          <div className="hidden md:block">
+          {/* Call to Action Button & Instagram */}
+          <div className="hidden md:flex items-center gap-3">
+            <a
+              href="https://www.instagram.com/aredh_skincare"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram @aredh_skincare"
+              className="p-2 bg-stone-900/60 hover:bg-stone-800 text-stone-300 hover:text-pink-400 rounded-full border border-stone-800 hover:border-pink-500/30 transition-all duration-300 hover:scale-105"
+              title="Follow @aredh_skincare on Instagram"
+            >
+              <Instagram className="w-4 h-4" />
+            </a>
             <a
               href="#contact"
               onClick={(e) => handleScrollTo(e, "contact")}
@@ -115,13 +125,22 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
-            <div className="pt-2">
+            <div className="pt-2 flex flex-col gap-2.5">
               <a
                 href="#contact"
                 onClick={(e) => handleScrollTo(e, "contact")}
                 className="w-full text-center block px-5 py-3 bg-gradient-to-r from-gold-500/80 to-gold-400/80 text-stone-950 font-semibold text-xs uppercase tracking-wider rounded-xl shadow-lg border border-gold-300/20"
               >
                 Enquire Now
+              </a>
+              <a
+                href="https://www.instagram.com/aredh_skincare"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full text-center flex items-center justify-center gap-2 px-5 py-2.5 bg-stone-900 border border-stone-800 text-pink-300 hover:text-pink-200 font-mono text-xs tracking-wider rounded-xl transition-colors"
+              >
+                <Instagram className="w-4 h-4 text-pink-400" />
+                @aredh_skincare
               </a>
             </div>
           </div>

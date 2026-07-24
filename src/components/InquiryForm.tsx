@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Phone, MapPin, Mail, Sparkles, CheckCircle2, AlertCircle, Lock, RefreshCw, Trash2, FileDown, Eye, MessageSquare } from "lucide-react";
+import { Phone, MapPin, Mail, Sparkles, CheckCircle2, AlertCircle, Lock, RefreshCw, Trash2, FileDown, Eye, MessageSquare, Instagram } from "lucide-react";
 import { Inquiry } from "../types";
 
 interface InquiryFormProps {
@@ -458,7 +458,7 @@ export default function InquiryForm({ selectedSize }: InquiryFormProps) {
                   </div>
                 </div>
 
-                {/* Email (Derived from metadata or user contact if available, or official contact) */}
+                {/* Email */}
                 <div className="flex gap-4 items-start">
                   <div className="w-11 h-11 rounded-xl bg-gold-400/10 border border-gold-400/25 flex items-center justify-center shrink-0 text-gold-300">
                     <Mail className="w-5 h-5" />
@@ -473,26 +473,55 @@ export default function InquiryForm({ selectedSize }: InquiryFormProps) {
                     </a>
                   </div>
                 </div>
+
+                {/* Instagram */}
+                <div className="flex gap-4 items-start">
+                  <div className="w-11 h-11 rounded-xl bg-pink-500/10 border border-pink-500/25 flex items-center justify-center shrink-0 text-pink-400">
+                    <Instagram className="w-5 h-5" />
+                  </div>
+                  <div className="space-y-0.5">
+                    <span className="text-[10px] text-stone-500 font-mono tracking-wider block">INSTAGRAM</span>
+                    <a
+                      href="https://www.instagram.com/aredh_skincare"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-stone-200 hover:text-pink-300 font-mono text-xs block transition-colors"
+                    >
+                      @aredh_skincare
+                    </a>
+                  </div>
+                </div>
               </div>
 
-              {/* Direct WhatsApp Callout Button */}
+              {/* Direct WhatsApp & Instagram Callout Buttons */}
               <div className="p-6 rounded-2xl bg-stone-900/40 border border-stone-800 space-y-4 max-w-sm">
                 <div className="flex items-center gap-2">
                   <MessageSquare className="w-4 h-4 text-emerald-400" />
-                  <span className="text-xs font-bold text-stone-200 uppercase tracking-wider font-mono">Instant Chat Options</span>
+                  <span className="text-xs font-bold text-stone-200 uppercase tracking-wider font-mono">Instant Connect</span>
                 </div>
                 <p className="text-stone-400 text-xs font-sans leading-relaxed">
-                  Prefer a conversational process? Chat immediately with our care advisor on WhatsApp for instant assistance.
+                  Prefer a quick chat or social update? Message us on WhatsApp or follow our Instagram handle for skincare rituals.
                 </p>
-                <a
-                  href={whatsappUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  referrerPolicy="no-referrer"
-                  className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-sans font-bold text-xs uppercase tracking-wider rounded-lg shadow-md transition-all duration-300 cursor-pointer"
-                >
-                  Chat on WhatsApp
-                </a>
+                <div className="space-y-2.5">
+                  <a
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    referrerPolicy="no-referrer"
+                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-sans font-bold text-xs uppercase tracking-wider rounded-lg shadow-md transition-all duration-300 cursor-pointer"
+                  >
+                    Chat on WhatsApp
+                  </a>
+                  <a
+                    href="https://www.instagram.com/aredh_skincare"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-gradient-to-r from-purple-900/60 via-pink-900/60 to-orange-900/60 hover:from-purple-800/80 hover:to-orange-800/80 border border-pink-500/30 text-stone-100 font-sans font-bold text-xs uppercase tracking-wider rounded-lg shadow-md transition-all duration-300 cursor-pointer"
+                  >
+                    <Instagram className="w-4 h-4 text-pink-400" />
+                    Follow @aredh_skincare
+                  </a>
+                </div>
               </div>
             </div>
 
