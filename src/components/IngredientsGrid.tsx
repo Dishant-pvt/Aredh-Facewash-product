@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { INGREDIENTS } from "../data";
 import { Ingredient } from "../types";
 import { X, Sparkles, Sun, Shield, Flame, Activity, Droplet, Maximize2, Award, Leaf, Heart, Flower2, Check, ArrowRight, BookOpen, FlaskConical, ShieldCheck } from "lucide-react";
@@ -24,6 +24,30 @@ const IconMap: { [key: string]: React.ComponentType<any> } = {
 export default function IngredientsGrid() {
   const [selectedIng, setSelectedIng] = useState<Ingredient | null>(null);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
+
+  // Prevent main site background scrolling when ingredient modal is open
+  useEffect(() => {
+    if (selectedIng) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [selectedIng]);
+
+  // Handle ESC key to close ingredient modal
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && selectedIng) {
+        setSelectedIng(null);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedIng]);
 
   return (
     <section
@@ -110,8 +134,14 @@ export default function IngredientsGrid() {
 
         {/* Detailed Expandable Ingredient Overlay Modal */}
         {selectedIng && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-950/45 backdrop-blur-md animate-fade-in">
-            <div className="relative w-full max-w-3xl rounded-2xl bg-stone-900/65 backdrop-blur-xl border border-gold-400/30 shadow-2xl overflow-hidden text-left max-h-[92vh] flex flex-col animate-zoom-in">
+          <div 
+            onClick={() => setSelectedIng(null)}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-950/80 backdrop-blur-md animate-fade-in overscroll-contain"
+          >
+            <div 
+              onClick={(e) => e.stopPropagation()}
+              className="relative w-full max-w-3xl rounded-2xl bg-stone-900/95 backdrop-blur-xl border border-gold-400/30 shadow-2xl overflow-hidden text-left max-h-[92vh] flex flex-col animate-zoom-in overscroll-contain"
+            >
               
               {/* Outer Decorative Gold Line Frame */}
               <div className="absolute inset-2 border border-gold-400/10 pointer-events-none rounded-xl" />
@@ -158,7 +188,7 @@ export default function IngredientsGrid() {
               </div>
 
               {/* Scrollable Content Container (2-Column Grid on Desktop) */}
-              <div className="p-6 md:p-8 overflow-y-auto space-y-6 flex-grow relative z-10">
+              <div className="p-6 md:p-8 overflow-y-auto space-y-6 flex-grow relative z-10 overscroll-contain">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
                   
                   {/* Left Column: Framed Portrait Image & Sanskrit */}

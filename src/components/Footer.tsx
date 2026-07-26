@@ -65,6 +65,7 @@ export default function Footer() {
               <a href="#why-aredh" onClick={(e) => handleScrollTo(e, "why-aredh")} className="text-stone-400 hover:text-gold-300 transition-colors">Our Philosophy</a>
               <a href="#ritual" onClick={(e) => handleScrollTo(e, "ritual")} className="text-stone-400 hover:text-gold-300 transition-colors">Cleansing Ritual</a>
               <a href="#reviews" onClick={(e) => handleScrollTo(e, "reviews")} className="text-stone-400 hover:text-gold-300 transition-colors">Verified Customer Reviews</a>
+              <a href="#blog" onClick={(e) => handleScrollTo(e, "blog")} className="text-stone-400 hover:text-gold-300 transition-colors">Ayurvedic Skincare Journal</a>
               <a 
                 href="#admin" 
                 onClick={(e) => {

@@ -7,6 +7,7 @@ import IngredientsGrid from "./components/IngredientsGrid";
 import WhyChoose from "./components/WhyChoose";
 import HowToUse from "./components/HowToUse";
 import Testimonials from "./components/Testimonials";
+import BlogSection from "./components/BlogSection";
 import InquiryForm from "./components/InquiryForm";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
@@ -61,18 +62,22 @@ export default function App() {
         {/* 8. Customers Testimonial */}
         <Testimonials />
 
-        {/* 9. Key Form Inquiry section */}
+        {/* 9. SEO Knowledge Hub & Journal (12 Articles) */}
+        <BlogSection onEnquireClick={handleEnquireScroll} />
+
+        {/* 10. Key Form Inquiry section */}
         <InquiryForm selectedSize={selectedSize} />
 
-        {/* 10. Frequently Asked Questions */}
+        {/* 11. Frequently Asked Questions */}
         <FAQ />
       </main>
 
-      {/* 11. Footer details */}
+      {/* 12. Footer details */}
       <Footer />
 
-      {/* 12. Floating Widgets */}
+      {/* 13. Floating Widgets */}
       <WhatsAppButton />
     </div>
   );
 }
+

@@ -40,3 +40,29 @@ export interface FAQItem {
   question: string;
   answer: string;
 }
+
+export interface BlogPost {
+  id: string;
+  slug: string;
+  title: string;
+  subtitle: string;
+  category: "Ingredients" | "Ayurvedic Skincare" | "Rituals & Routines" | "Skin Types & Doshas" | "Natural Beauty Secrets";
+  author: string;
+  publishedDate: string;
+  readTime: string;
+  imageUrl: string;
+  excerpt: string;
+  content: {
+    introduction: string;
+    sections: {
+      heading: string;
+      body: string;
+      bulletPoints?: string[];
+    }[];
+    keyTakeaways: string[];
+    faq?: { question: string; answer: string }[];
+  };
+  tags: string[];
+  metaDescription: string;
+  keywords: string[];
+}

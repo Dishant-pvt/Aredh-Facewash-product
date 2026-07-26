@@ -20,6 +20,7 @@ export default function Navbar() {
     { name: "Why AREDH", href: "#why-aredh" },
     { name: "Ritual", href: "#ritual" },
     { name: "Reviews", href: "#reviews" },
+    { name: "Journal", href: "#blog" },
     { name: "FAQs", href: "#faqs" },
     { name: "Contact", href: "#contact" },
   ];
