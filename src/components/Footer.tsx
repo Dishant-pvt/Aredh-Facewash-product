@@ -66,6 +66,7 @@ export default function Footer() {
               <a href="#ritual" onClick={(e) => handleScrollTo(e, "ritual")} className="text-stone-400 hover:text-gold-300 transition-colors">Cleansing Ritual</a>
               <a href="#reviews" onClick={(e) => handleScrollTo(e, "reviews")} className="text-stone-400 hover:text-gold-300 transition-colors">Verified Customer Reviews</a>
               <a href="#blog" onClick={(e) => handleScrollTo(e, "blog")} className="text-stone-400 hover:text-gold-300 transition-colors">Ayurvedic Skincare Journal</a>
+              <a href="#location" onClick={(e) => handleScrollTo(e, "location")} className="text-stone-400 hover:text-gold-300 transition-colors">Location & Map</a>
               <a 
                 href="#admin" 
                 onClick={(e) => {
@@ -87,9 +88,14 @@ export default function Footer() {
             <div className="space-y-4 font-sans text-sm">
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-gold-400 shrink-0 mt-1" />
-                <span className="text-stone-400 leading-relaxed">
-                  AREDH Cosmetics, Jamnagar, Gujarat, India — 361005
-                </span>
+                <a
+                  href="https://maps.app.goo.gl/FTcoQGkLdiZ8LnmeA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-stone-400 hover:text-gold-300 transition-colors leading-relaxed"
+                >
+                  AREDH, Mukta Estate, Plot No. 37, Shanker Tekri, Gokul Nagar, Jamnagar, Gujarat — 361006
+                </a>
               </div>
 
               <div className="flex items-start gap-3">

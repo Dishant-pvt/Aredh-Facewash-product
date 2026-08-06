@@ -21,6 +21,7 @@ export default function Navbar() {
     { name: "Ritual", href: "#ritual" },
     { name: "Reviews", href: "#reviews" },
     { name: "Journal", href: "#blog" },
+    { name: "Location", href: "#location" },
     { name: "FAQs", href: "#faqs" },
     { name: "Contact", href: "#contact" },
   ];

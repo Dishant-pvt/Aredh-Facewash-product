@@ -438,7 +438,14 @@ export default function InquiryForm({ selectedSize }: InquiryFormProps) {
                   </div>
                   <div className="space-y-0.5">
                     <span className="text-[10px] text-stone-500 font-mono tracking-wider block">DISPATCH LOCATION</span>
-                    <p className="text-stone-200 font-sans text-sm font-medium">Jamnagar, Gujarat, India - 361005</p>
+                    <a
+                      href="https://maps.app.goo.gl/FTcoQGkLdiZ8LnmeA"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-stone-200 hover:text-gold-300 font-sans text-sm font-medium transition-colors block"
+                    >
+                      AREDH, Mukta Estate, Plot No. 37, Shanker Tekri, Gokul Nagar, Jamnagar, Gujarat — 361006
+                    </a>
                   </div>
                 </div>
 

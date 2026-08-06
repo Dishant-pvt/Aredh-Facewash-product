@@ -9,6 +9,7 @@ import HowToUse from "./components/HowToUse";
 import Testimonials from "./components/Testimonials";
 import BlogSection from "./components/BlogSection";
 import InquiryForm from "./components/InquiryForm";
+import LocationSection from "./components/LocationSection";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
@@ -68,7 +69,10 @@ export default function App() {
         {/* 10. Key Form Inquiry section */}
         <InquiryForm selectedSize={selectedSize} />
 
-        {/* 11. Frequently Asked Questions */}
+        {/* 11. Headquarters Location & Google Map */}
+        <LocationSection />
+
+        {/* 12. Frequently Asked Questions */}
         <FAQ />
       </main>
 
