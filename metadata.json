@@ -1,6 +1,6 @@
 {
-  "name": "AREDH Herbal Cleanser",
-  "description": "Premium Ayurvedic Herbal Cleanser single-product landing page with interactive ingredient showcase, lead-generation inquiry form, and inquiry management.",
+  "name": "AREDH Ayurvedic Skincare",
+  "description": "Luxury Ayurvedic Skincare & Facial Care in Ayurveda. Featuring 100% natural ayurvedic facial cleansers, ingredient showcases, lead inquiry management, and dispatch details for AREDH Jamnagar.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

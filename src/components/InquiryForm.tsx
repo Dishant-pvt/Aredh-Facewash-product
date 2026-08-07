@@ -439,7 +439,7 @@ export default function InquiryForm({ selectedSize }: InquiryFormProps) {
                   <div className="space-y-0.5">
                     <span className="text-[10px] text-stone-500 font-mono tracking-wider block">DISPATCH LOCATION</span>
                     <a
-                      href="https://maps.app.goo.gl/FTcoQGkLdiZ8LnmeA"
+                      href="https://maps.app.goo.gl/tcCQ36dyFtKBBMdd6"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-stone-200 hover:text-gold-300 font-sans text-sm font-medium transition-colors block"

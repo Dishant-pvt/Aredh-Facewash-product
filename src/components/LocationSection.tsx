@@ -2,8 +2,8 @@ import React from "react";
 import { MapPin, Phone, Mail, Instagram, ExternalLink, Clock, Navigation, Sparkles, Building2 } from "lucide-react";
 
 export default function LocationSection() {
-  const mapSearchUrl = "https://maps.app.goo.gl/FTcoQGkLdiZ8LnmeA";
-  const embeddedMapUrl = "https://maps.google.com/maps?q=AREDH,+Mukta+Estate,+Plot+No.+37,+Shanker+Tekri,+Gokul+Nagar,+Jamnagar,+Gujarat+361006&t=&z=16&ie=UTF8&iwloc=&output=embed";
+  const mapSearchUrl = "https://maps.app.goo.gl/tcCQ36dyFtKBBMdd6";
+  const embeddedMapUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.44227105177254!2d70.04382273392181!3d22.45096765373771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395715fc3ae61bbf%3A0x55d57dd1e3729676!2sAredh!5e0!3m2!1sen!2sin!4v1786080785136!5m2!1sen!2sin" ;
 
   return (
     <section id="location" className="py-20 bg-stone-950 relative overflow-hidden border-t border-stone-900">
@@ -53,7 +53,7 @@ export default function LocationSection() {
             <div className="mt-4 px-2 sm:px-4 pb-2 flex flex-col sm:flex-row items-center justify-between gap-4">
               <div className="flex items-center gap-2 text-xs font-mono text-stone-400">
                 <Navigation className="w-4 h-4 text-gold-400" />
-                <span>GPS Coordinates: 22.4707° N, 70.0577° E</span>
+                <span>GPS Coordinates: 22.4509° N, 70.0439° E</span>
               </div>
               <a
                 href={mapSearchUrl}
